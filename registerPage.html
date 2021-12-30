@@ -23,97 +23,99 @@
     <div>사용자 정보입력</div>
     <p>안녕하세요. 정훈이의 홈페이지를 자유롭게 이용하려면 회원가입을 하셔야 합니다.<br>
     아래의 사항들을 빠짐없이 기록해 주세요.</p>
-    <table>
-        <tr>
-            <th class="title">사용자ID</th>
-            <td colspan="3">
-                <form>
-                    <input size="15" type="text" name="id">
-                    <button type="button">ID중복확인</button>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <th class="title">비밀번호</th>
-            <td><input size="15" type="password" name="password"></td>
-            <th class="title">비밀번호 확인</th>
-            <td><input size="15" type="password" name="password"></td>
-        </tr>
-        <tr>
-            <th class="title">사용자 이름</th>
-            <td colspan="3"><input size="10" type="text" name="name"></td>
-        </tr>
-        <tr>
-            <th class="title">주민등록번호</th>
-            <td colspan="3"><input size="6" type="text" name="id_num">
-                - <input size="7" type="password" name="id_num_back">
-            </td>
-        </tr>
-        <tr>
-            <th class="title">생년월일</th>
-            <td><input size="6" type="text" name="birth"></td>
-            <th class="title">성별</th>
-            <td>
-                <form>
-                    <input type="radio" name="sex" checked>남자
-                    <input type="radio" name="sex">여자
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <th class="title">우편번호</th>
-            <td colspan="3">
-                <form>
-                    <input size="5" type="text" name="adress_num">
-                    <button type="button">우편번호검색</button>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <th class="title">주소</th>
-            <td colspan="3"><input size="50" type="text" name="adress1"></td>
-        </tr>
-        <tr>
-            <th class="title">나머지 주소</th>
-            <td colspan="3"><input size="50" type="text" name="adress2"></td>
-        </tr>
-        <tr>
-            <th class="title">E-Mail</th>
-            <td colspan="3">
-                <form>
-                    <input type="text" name="email">@
-                    <select>
-                        <option>선택</option>
-                        <option>naver.com</option>
-                        <option>hanmail.net</option>
-                        <option>gmail.com</option>
-                        <option>직접입력</option>
-                    </select>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <th class="title">직업</th>
-            <td colspan="3">
-                <form>
-                    <select>
-                        <option>선택</option>
-                        <option>무직</option>
-                        <option>학생</option>
-                        <option>직장인</option>
-                        <option>기타</option>
-                    </select>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td class="inBtn" colspan="4">
-                <form>
-                    <button type="submit">등록</button>
-                    <button type="reset">취소</button>
-                </form>
-            </td>
-        </tr>
-    </table>
+    <form name="member" action="join.jsp" method="get">
+        <table>
+            <tr>
+                <th class="title">사용자ID</th>
+                <td colspan="3">
+                    <form>
+                        <input size="15" type="text" name="id">
+                        <button type="button">ID중복확인</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th class="title">비밀번호</th>
+                <td><input size="15" type="password" name="password"></td>
+                <th class="title">비밀번호 확인</th>
+                <td><input size="15" type="password" name="password"></td>
+            </tr>
+            <tr>
+                <th class="title">사용자 이름</th>
+                <td colspan="3"><input size="10" type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th class="title">주민등록번호</th>
+                <td colspan="3"><input size="6" type="text" name="id_num">
+                    - <input size="7" type="password" name="id_num_back">
+                </td>
+            </tr>
+            <tr>
+                <th class="title">생년월일</th>
+                <td><input size="6" type="text" name="birth"></td>
+                <th class="title">성별</th>
+                <td>
+                    <form>
+                        <input type="radio" name="sex" checked>남자
+                        <input type="radio" name="sex">여자
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th class="title">우편번호</th>
+                <td colspan="3">
+                    <form>
+                        <input size="5" type="text" name="adress_num">
+                        <button type="button">우편번호검색</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th class="title">주소</th>
+                <td colspan="3"><input size="50" type="text" name="adress1"></td>
+            </tr>
+            <tr>
+                <th class="title">나머지 주소</th>
+                <td colspan="3"><input size="50" type="text" name="adress2"></td>
+            </tr>
+            <tr>
+                <th class="title">E-Mail</th>
+                <td colspan="3">
+                    <form>
+                        <input type="text" name="email">@
+                        <select>
+                            <option>선택</option>
+                            <option>naver.com</option>
+                            <option>hanmail.net</option>
+                            <option>gmail.com</option>
+                            <option>직접입력</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th class="title">직업</th>
+                <td colspan="3">
+                    <form>
+                        <select>
+                            <option>선택</option>
+                            <option>무직</option>
+                            <option>학생</option>
+                            <option>직장인</option>
+                            <option>기타</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="inBtn" colspan="4">
+                    <form>
+                        <button type="submit">등록</button>
+                        <button type="reset">취소</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
